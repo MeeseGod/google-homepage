@@ -3,10 +3,71 @@ body{
     font-size: 14px;
 }
 
-.top-page{
+.top-area{
     display: flex;
+    justify-content: space-between;
+}
+
+.top-left{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    float: left;
+}
+
+.top-right{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    float: right;
+}
+.top-icons{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    float: right;
 }
 
 a{
     text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.store{
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: #222;
+}
+
+.about{
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: #222;
+}
+
+.gmail{
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: #222;
+}
+
+.images{
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: #222;
+}
+
+.apps{
+
+}
+
+.apps:hover{
+    background-color: rgba(100, 100, 100, 0.07);
 }
