@@ -52,22 +52,40 @@ a:hover{
 
 .gmail{
     display: inline-block;
+    position: absolute;
     padding: 5px;
     margin: 0 5px;
     color: #222;
+    right: 10%;
 }
 
 .images{
     display: inline-block;
+    position: absolute;
     padding: 5px;
     margin: 0 5px;
     color: #222;
+    right: 6%;
+}
+
+
+
+.apps-container{
+    position: absolute;
+    display: inline-block;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.apps-container:hover{
+    background-color: rgba(221, 220, 220, 0.4);
 }
 
 .apps{
-
-}
-
-.apps:hover{
-    background-color: rgba(100, 100, 100, 0.07);
-}
+    display: flex;
+    position: absolute;
+    left: 28%;
+    top: 28%;
+}   
