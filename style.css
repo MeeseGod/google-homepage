@@ -1,7 +1,26 @@
 body{
     font-family: arial,sans-serif;
     font-size: 14px;
+    margin: 0px;
 }
+
+a {
+    text-decoration: none;
+}
+
+    a:visited {
+        text-decoration: none;
+        color: #222;
+    }
+
+    a + a {
+        margin-left: 15px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
 
 .top-area{
     display: flex;
@@ -12,29 +31,34 @@ body{
     display: flex;
     align-items: center;
     padding: 6px;
-    float: left;
 }
 
 .top-right{
     display: flex;
     align-items: center;
     padding: 6px;
-    float: right;
 }
 .top-icons{
     display: flex;
     align-items: center;
     padding: 6px;
-    float: right;
 }
 
-a{
-    text-decoration: none;
+
+.apps-container {
+    display: inline-block;
+    align-items: center;
 }
 
-a:hover{
-    text-decoration: underline;
+.app-image{
+
 }
+
+.apps-container:hover {
+        background-color: rgba(128, 128, 128, 0.2);
+        border-radius: 50%;
+ }
+
 
 .store{
     display: inline-block;
@@ -50,42 +74,192 @@ a:hover{
     color: #222;
 }
 
-.gmail{
+.gmail {
     display: inline-block;
-    position: absolute;
     padding: 5px;
     margin: 0 5px;
     color: #222;
-    right: 10%;
+    font-family: arial,sans-serif;
+    font-size: 13px;
 }
 
-.images{
+.images {
     display: inline-block;
-    position: absolute;
     padding: 5px;
     margin: 0 5px;
     color: #222;
-    right: 6%;
+    font-family: arial,sans-serif;
+    font-size: 13px;
 }
 
-
-
-.apps-container{
-    position: absolute;
+.apps {
     display: inline-block;
-    right: 30px;
-    height: 40px;
-    width: 40px;
+    color: #222;
+    margin-left: 25px;
+}
+
+.avatar {
+    display: inline-block;
+    margin-left: 22px;
+
+}
+
+.avatar-image{
     border-radius: 50%;
 }
 
-.apps-container:hover{
-    background-color: rgba(221, 220, 220, 0.4);
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 180px;
 }
 
-.apps{
+.search {
     display: flex;
-    position: absolute;
-    left: 28%;
-    top: 28%;
-}   
+    width: auto;
+    max-width: 584px;
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.search:hover{
+    box-shadow: 0 1px 6px rgb( 32 33 36 / 28%);
+}
+
+.search-bar {
+    display: inline-block;
+    height: 100%;
+    width: 90%;
+    border-radius: inherit;
+    border: none;
+}
+
+#search-style {
+    border: none;
+    outline: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    font-family: inherit;
+    padding: 0 0;
+}
+
+.search-icon-container {
+    display: inline-block;
+    height: 100%;
+    width: 10%;
+    border-radius: inherit;
+}
+
+.voice-icon-container {
+    display: inline-block;
+    height: 100%;
+    width: 10%;
+    border-radius: inherit;
+}
+
+IMG.voice-icon {
+    display: block;
+    position: relative;
+    margin:auto;
+    top: 10px;
+}
+
+IMG.search-icon {
+    display: block;
+    position: relative;
+    margin: auto;
+    top: 12px;
+}
+
+.search-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-search {
+    font-family: arial,sans-serif;
+    margin: 5px;
+    position: relative;
+    top: 30px;
+    outline: none;
+    border: none;
+    height: 35px;
+    width: 150px;
+}
+
+.lucky-search {
+    font-family: arial,sans-serif;
+    margin: 5px;
+    position: relative;
+    top: 30px;
+    outline: none;
+    border: none;
+    height: 35px;
+    width: 150px;
+}
+
+.lucky-search:hover {
+    box-shadow: 0 1px 6px rgb( 32 33 36 / 28%);
+}
+
+.google-search:hover {
+    box-shadow: 0 1px 6px rgb( 32 33 36 / 28%);
+}
+
+.spacer{
+    display: flex;
+    flex-grow:1;
+    height: 394px;
+}
+
+.bottom-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-placement {
+    background: #f2f2f2;
+    width: 100%;
+}
+
+.canada {
+    border-bottom: 1px solid #dadce0;
+    padding: 15px;
+    text-decoration: none;
+    color: lightgray;
+}
+
+.final-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+}
+
+.left-footer {
+
+}
+
+.right-footer {
+    display: flex;
+    margin-left: 5px;
+}
+
+@media (max-width: 1200px) {
+    .final-bottom {
+        justify-content: center;
+    }
+}
+
+#color-anchors {
+    color: #70757a
+}
